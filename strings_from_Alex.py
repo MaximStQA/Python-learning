@@ -10,7 +10,7 @@ surname = '1234'
 
 # print(name[5]) # несуществующий индекс вернёт ошибку
 
-# print(name[-1:0:-1]) # [start:stop(не включительно):step]
+#print(name[-1:0:-1]) # [start:stop(не включительно):step]
 
 # print(len(name) - 1) # получить последний индекс
 
