@@ -35,16 +35,17 @@
 и выводит её в обратном порядке, используя срезы."""
 
 # a = input("введи строку: ")
-# print(a[5:0:-1])
+# print(a[::-1])
 
 
 """Получите и выведите каждый второй символ введенной строки."""
 
 # a = input("tekct: ")
-# a = int(a)
-# for i in a:
-#     if i % 2 == 0:
-#         print(i)
+# #a = int(a)
+#
+# for i in range(len(a)):
+#     if i % 2 == 1:
+#         print(a[i])
 
 # a = input("инпут что ни будь: ")
 # print(a[1::2])
@@ -95,15 +96,17 @@
 а затем соединяет их обратно в строку, но слова разделены запятыми."""
 
 # a = input(": ")
-# print(a.split(","))
-# b = ', '.join(a)
-# print(b)  #???????????????????????????????????????????????
+# #print(a.split(" "))
+# c = a.split()
+# print(c)
+# b = ", ".join(c)
+# print(b)
 
 """Дана строка. Вывести первый, последний и средний (если он есть)) символы."""
 
 # a = input(": ")
 # b = len(a)
-# if b % 2 != 0:
+# if b % 2 != 0 and b > 2:
 #     midle = a[b // 2]
 #     print(midle)
 # print(a[0], a[-1])
@@ -115,22 +118,29 @@
 
 # a = input(": ")
 #
-# print(a[0], a[1], a[2], a[-1], a[-2], a[-3])
+# #print(a[0], a[1], a[2], a[-1], a[-2], a[-3])
+# print(a[0:3], a[-3:] )
 #
 # lenth = len(a)
 # print(lenth)
 # b = lenth
 #
 # if b < 5:
-#     print((a[0] + ", ") * b, end=" - вот")
+#     print((a[0] + ", ") * b, end=" - вот\n")
+#     print(((a[0] + ", ") * b)[:-2])
 
 """Сформировать строку из 10 символов. 
 На четных позициях должны находится четные цифры, на нечетных позициях - буквы."""
 
-# a = "12345qwert"
-# a = a.isalnum()
-# for i in a:
-#     if i % 2 == 0:       #????????????
+# a = ""
+# for i in range(10):
+#     if i % 2 == 0:
+#         g = str(i)
+#         a = a + g
+#     else:
+#         h = "qwertyuiop"
+#         a = a + h[i]
+# print(a)
 
 
 
@@ -142,20 +152,20 @@
 # pos = 0
 # for i in a:
 #     if i == a[-1]:
-#         pos = i
-# print(pos)     #????????
+#         print(pos)
+#     pos += 1
 
 
  #"""Дана строка. Показать третий, шестой, девятый и так далее символы."""
 
 # a = input(": ")
-# a = int(a)
-# b = a
+# pos = 2
+# b = len(a) // 3
 #
 # for i in range(b):
-#
-#     if i % 3 == 0:
-#         print(i)    #??????????
+#     print(a[pos])
+#     pos += 3
+
 
 
 
@@ -164,17 +174,25 @@
 А так же сколько таких символов, после которых следует цифра ноль."""
 
 # a = input(": ")
-#
+# b = 0   #индекс символа строки на каждой итерации
+# zeroAfter = 0
 # numPLUS = 0
 # nunMINAS = 0
 #
-# for i in range(a):
+# for i in a[:-1]:
 #     if i == "+":
-#         numPLUS += i
-#     if i == "-":
-#         nunMINAS += i
+#         if a[b+1] == "0":
+#             zeroAfter += 1
+#         numPLUS += 1
+#     elif i == "-":
+#         if a[b+1] == "0":
+#             zeroAfter += 1
+#         nunMINAS += 1
+#     b += 1
+# print(zeroAfter)
 # print(numPLUS)
 # print(nunMINAS)
+
 
 
 
@@ -184,16 +202,37 @@
 Если какого-то из символов нет, вывести сообщение об этом."""
 
 # a = input(": ")
-# for i in range(a):
-#     if i == "x":
-#         print("x found")
-#     elif i == "w":
-#         print("w found")
-#     else:
-#         print("non")
+# x = a.find("x")
+# w = a.find("w")
+# if x == -1:
+#     print("x-ов нет")
+# if w == -1:
+#     print("w-ов нет")
+#
+# if x < w and x != -1 and w != -1:
+#     print("x раньше")
+# elif w < x and w != -1 and x != -1:
+#     print("w раньше")
+# else:
+#     print("w, x - нет")
+
+    # что делаем если одного или двух элементов нет
+
 
 """Дана строка. Если она начинается на 'abc', то заменить их на 'www', 
 иначе добавить в конец строки 'zzz'."""
+
+# a = input(": ")
+# s = a.startswith("abc")
+# lenth = len(a)
+# if s == True:
+#     print(a.replace("abc", 'www', 1))
+# else:
+#     #print(a + "zzz")
+#     print(a.ljust(lenth + 3, "z"))
+
+
+
 
 
 
@@ -201,10 +240,47 @@
 то оставить в строке только первые 6 символов, 
 иначе дополнить строку символами 'o' до длины 12."""
 
+# a = input(": ")
+# b = len(a)
+# if b > 10:
+#     print(a[:6])
+# else:
+#     print(a.ljust(12, "o"))
+
+
+
+
 """Дана строка. Заменить каждый четный символ или на 'a', 
 если символ не равен 'a' или 'b', или на 'c' в противном случае."""
 
+# a = input(": ")
+# b = list(a)
+# for i in range(len(b)):
+#     if i % 2 != 0:
+#         if b[i] != "a" and b[i] != "b":
+#             b[i] = "a"
+#         else:
+#             b[i] = "c"
+# print("".join(b))
+
+
+
+
 """Дана строка. Определить, содержит ли строка только символы 'a', 'b', 'c' или нет."""
+
+# a = input(": ")
+# counter = 0
+# for i in a:
+#     if i not in ["a", "b", "c"]:
+#         counter += 1
+# if counter == 0:
+#     print("только из abc ")
+#
+# else:
+#     print("не только из abc ")
+
+
+
 
 
 
