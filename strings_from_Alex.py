@@ -39,3 +39,11 @@ split используя запятую как разделитель, из по
 списка возьми нуловой элемент, объедени его елементы 
 символом '|' с помощью join """
 # print(my_string)
+# x = 'Петя'
+# b = [1, 2, 3]
+# name_1 = 'Привет {name}. Как дела {something}'.format(something=b, name=x)
+# name_2 = 'Кто {}? Я {}'.format('Ты', b)
+# print(name_1)
+# print(name_2)
+# print(f'Привет {x}. Как дела {b.pop()}?')
+# print(r'D:\Python_Projects\Maxim_Stulov\Python-learning\ntrings_from_Alex.py')
