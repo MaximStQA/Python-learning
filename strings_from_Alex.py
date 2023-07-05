@@ -1,9 +1,9 @@
 # лексикографическое сравнение
-a = ord('q')
-
-
-name = 'SashaKomarov'
-surname = '1234'
+# a = ord('q')
+#
+#
+#name = 'SashaKomarov'
+# surname = '1234'
 
 # print(name[1], name[2], name[3])
 # print(name[0], name[-1], name[-2])
@@ -18,7 +18,7 @@ surname = '1234'
 # print(name.lower())
 # print(surname.count(''))
 # print(name.count('ov'))
-# print(name.find("a", 5, 10)) # find(obj, start index, end index(не включительно))
+#print(name.find("a", 5, 10)) # find(obj, start index, end index(не включительно))
 # print(name.rfind('a'))
 # print(name.index('g')) index(obj, start index, end index(не включительно))
 # print(name.replace('a', '!', 2))
@@ -29,7 +29,7 @@ surname = '1234'
 # print(name.rjust(15, '!')) # дополни до указанного количесва символами
 # print(name.ljust(15, '!'))
 # print(name.center(18, '!'))
-ful_name = 'Komarov, Alex ander, Serge evich'
+#ful_name = 'Komarov, Alex ander, Serge evich'
 # print(ful_name.split(',')) # делит строку на части разделителем(параметром)
 # h =', '.join('123') # соеденить элементы
 # print(h)
@@ -38,12 +38,14 @@ ful_name = 'Komarov, Alex ander, Serge evich'
 split используя запятую как разделитель, из полученного 
 списка возьми нуловой элемент, объедени его елементы 
 символом '|' с помощью join """
-# print(my_string)
-# x = 'Петя'
-# b = [1, 2, 3]
-# name_1 = 'Привет {name}. Как дела {something}'.format(something=b, name=x)
-# name_2 = 'Кто {}? Я {}'.format('Ты', b)
-# print(name_1)
-# print(name_2)
-# print(f'Привет {x}. Как дела {b.pop()}?')
-# print(r'D:\Python_Projects\Maxim_Stulov\Python-learning\ntrings_from_Alex.py')
+#print(my_string)
+
+x = 'Петя'
+b = [1, 2, 3]
+name_1 = 'Привет {name}. Как дела {something}'.format(something=b, name=x)
+name_2 = 'Кто {}? Я {}'.format('Ты', b)
+print(name_1)
+print(name_2)
+print(f'Привет {x}. Как дела {b.pop()}?')
+
+#print(r'D:\Python_Projects\Maxim_Stulov\Python-learning\ntrings_from_Alex.py')
