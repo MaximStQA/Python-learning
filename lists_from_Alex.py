@@ -19,14 +19,15 @@
 # del(my_list[0])
 # print(my_list)
 
-# my_list_10 = [1, 2, 3, 4, 5]
+#my_list_10 = [1, 2, 3, 4, 5]
 # print(my_list_10[::-1])
 # my_list_11 = my_list_10[:]
 # my_list_12 = my_list_10.copy() # создает новый список копию
 # print(my_list_11)
 #
-# my_list_10[2:5] = [7, 8] # поменять несколько элементов списка
+#my_list_10[2:5] = [7, 8]   # поменять несколько элементов списка
 # print(id(my_list_10[0]))
+# print(my_list_10)
 # print(id(my_list_10))
 
 # new = [1, 2, 5]
@@ -64,17 +65,17 @@
 # my_list.sort(reverse=True, key=lambda x: x == 2)
 # print(my_list)
 
-# my_list = [[1, 2, 3], [4, 5, 6, ['a', 'b', 'c']], [7, 8, 9]]
-# for i in my_list:
-#     print(i)
+my_list = [[1, 2, 3], [4, 5, 6, ['a', 'b', 'c']], [7, 8, 9]]
+for i in my_list:
+    print(i)
+
+print(my_list[1][3][2])
+print('b' in my_list[1][3])
+
+#my_list[1][2] = 10
+#my_list[1].pop()
+#del(my_list[1][2])
+print(my_list)
 #
-# print(my_list[1][3][2])
-# print('b' in my_list[1][3])
-
-# my_list[1][2] = 10
-# my_list[1].pop()
-# del(my_list[1][3])
-# print(my_list)
-
-# print(my_list[1][3][:2])
+print(my_list[1][3][:2])
 
