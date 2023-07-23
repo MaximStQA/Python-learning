@@ -8,13 +8,15 @@
 """Заполнить список нулями и единицами, при этом данные значения чередуются, начиная с нуля."""
 
 # my_list = [1, 2, 3, 4, 5]
-# for i in my_list:
+#
+# for i in range(len(my_list)):
 #     if i % 2 == 0:
 #         my_list[i] = 0
+#
 #     else:
 #         my_list[i] = 1
 #
-# print(my_list)   #?????????
+# print(my_list)
 
 
 # size = 5
