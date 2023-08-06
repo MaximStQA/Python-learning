@@ -28,6 +28,35 @@
 #         x += i
 # print(x)
 
+# my_list = [1, 2, 13, 4, 5]
+#
+# x = 0
+# flag = True
+# while flag:
+#     for i in my_list:
+#         if i % 2 != 0:
+#             x += i
+#         else:
+#             flag = False
+# print(x)
+
+# ind = 0
+# result = 0
+# flag = True
+# while flag:
+#     if my_list[ind] % 2 != 0 and my_list[ind] < 11:
+#         result += my_list[ind]
+#
+#     ind += 1
+#     if len(my_list) == ind:
+#         flag = False
+# print(result)
+
+
+
+
+
+
 
 """Найдите сумму чисел списка, которые стоят на нечетных местах и при этом больше суммы крайних элементов списка."""
 
@@ -78,7 +107,7 @@
 # midl = my_list_sum / lenth
 # print(midl)
 # for i in my_list:
-#     if my_list[i] > 3:
+#     if my_list[i] > x:
 #         my_list[i] = midl
 # print(my_list)
 
@@ -103,6 +132,26 @@
 #         my_list[i] = x
 # print(my_list)
 
+# my_list = [2, 1, 2, 3, 4, 5, 6, 7]
+# x = max(my_list)
+# e = min(my_list)
+# ind = 0
+
+
+# while ind < len(my_list):
+#     if my_list[ind] == x:
+#         my_list[ind] = e
+#     elif my_list[ind] == e:
+#         my_list[ind] = x
+#
+#     ind += 1
+#
+# print(my_list)
+
+
+
+
+
 """Найти наибольший четный элемент списка и поменять его местами с наименьшим нечетным элементом."""
 
 # my_list = [2, 3, 8, 4, 5, 6, 7]
@@ -124,20 +173,20 @@
 
 """Найти в списке все серии подряд идущих одинаковых элементов и удалить из них все элементы кроме одного."""
 
-my_list = [2, 3, 3, 3, 8, 4, 4, 5, 6, 7]
-
-ind = 0
-flag = True
-while flag:
-    if my_list[ind] == my_list[ind + 1]:
-        my_list.pop(ind)
-        continue
-    ind += 1
-
-    if len(my_list) == ind +1:
-
-        flag = False
-print(my_list)
+# my_list = [2, 3, 3, 3, 8, 4, 4, 5, 6, 7]
+#
+# ind = 0
+# flag = True
+# while flag:
+#     if my_list[ind] == my_list[ind + 1]:
+#         my_list.pop(ind)
+#         continue
+#     ind += 1
+#
+#     if len(my_list) == ind +1:
+#
+#         flag = False
+# print(my_list)
 
 
 

@@ -11,32 +11,32 @@
 #
 # print(summ)
 
-# login = 'Sasha'
-# password = '123'
-# in_log = input('Введите логин: ')
-# while True:
-#     if in_log != login:
-#         print('Вы ввели неверный логин')
-#         in_log = input('Введите логин: ')
-#         continue
-#     else:
-#         pasw = input('Введите пароль: ')
-#         if pasw != password:
-#             print('Вы ввели неверный пароль')
-#             in_log = ''
-#             continue
-
-my_list = [1, 2, 3, 3, 3, 4, 5, 6, 6, 7]
-
-flag = True
-while flag:
-    for i in range(len(my_list) - 1):
-        if my_list[i] == my_list[i + 1]:
-            my_list.pop(i)
-            break
+login = 'Sasha'
+password = '123'
+in_log = input('Введите логин: ')
+while True:
+    if in_log != login:
+        print('Вы ввели неверный логин')
+        in_log = input('Введите логин: ')
+        continue
     else:
-        flag = False
-print(my_list)
+        pasw = input('Введите пароль: ')
+        if pasw != password:
+            print('Вы ввели неверный пароль')
+            in_log = ''
+            continue
+
+# my_list = [1, 2, 3, 3, 3, 4, 5, 6, 6, 7]
+#
+# flag = True
+# while flag:
+#     for i in range(len(my_list) - 1):
+#         if my_list[i] == my_list[i + 1]:
+#             my_list.pop(i)
+#             break
+#     else:
+#         flag = False
+# print(my_list)
 
 
 
