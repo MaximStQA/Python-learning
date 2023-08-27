@@ -190,3 +190,7 @@
 
 
 
+from random import randint
+# my_list = [x for x = randint(0, 100)]
+num = input('enter your number ')
+print(sum([int(x) for x in num]))
