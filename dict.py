@@ -15,3 +15,4 @@ my_dict['name'] = 'Maksim'
 my_dict['name_1'] = 'Maksim'
 
 print(my_dict)
+
