@@ -14,4 +14,5 @@ my_dict['surname'] = 'Komarov' # добавление пар ключ значе
 my_dict['name'] = 'Maksim'
 my_dict['name_1'] = 'Maksim'
 
-print(my_dict)
+
+print(dict(a = 1, b = 2))
