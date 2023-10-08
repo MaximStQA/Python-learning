@@ -40,7 +40,7 @@
 
 # print(dict(a=1, b="wert"))
 # print(dict([[1, "ad"], [2, "ytfyu"]]))
-
+#
 # print(bool({1:456}))
 # if my_dict:
 #     print(bool(my_dict))
@@ -145,7 +145,7 @@
 # print(my_dict.items())
 
 # for i in my_dict.values():
-#      print(i)
+#       print(i)
 
 # for i in my_dict:
 #     print(f"{i}, {my_dict[i]}")
@@ -160,10 +160,10 @@
 
 
 
-my_dict = {"a": "цвет", "b": 2, "рост": 174}
-my_dict_new = {"11": "aaa", "222": 657657, "рост2": 178}
-# my_dict.update(my_dict_new)  # способ обьединения dicts 1
-# my_dict = {**my_dict,**my_dict_new}   # способ обьединения dicts 2
-print(my_dict)
-print(my_dict | my_dict_new)
-my_dict_3 = my_dict | my_dict_new
+# my_dict = {"a": "цвет", "b": 2, "рост": 174}
+# my_dict_new = {"11": "aaa", "222": 657657, "рост2": 178}
+# # my_dict.update(my_dict_new)  # способ обьединения dicts 1
+# # my_dict = {**my_dict,**my_dict_new}   # способ обьединения dicts 2
+# print(my_dict)
+# print(my_dict | my_dict_new)              # способ обьединения 3
+# my_dict_3 = my_dict | my_dict_new
