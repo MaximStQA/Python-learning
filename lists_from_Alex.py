@@ -1,11 +1,11 @@
-# my_list = [5, 2, 3.4]
-# my_list_2 = list('123')
+my_list = [5, 2, 3.4]
+my_list_2 = list('123')
 # print(my_list, my_list_2)
 #
-# print(id(my_list))
-# my_list[-1] = 4
-# print(id(my_list))
-# print(my_list)
+print(id(my_list))
+my_list[-1] = 4
+print(id(my_list))
+print(my_list)
 
 # print(len(my_list))
 # print(max(my_list))
@@ -65,17 +65,17 @@
 # my_list.sort(reverse=True, key=lambda x: x == 2)
 # print(my_list)
 
-my_list = [[1, 2, 3], [4, 5, 6, ['a', 'b', 'c']], [7, 8, 9]]
-for i in my_list:
-    print(i)
-
-print(my_list[1][3][2])
-print('b' in my_list[1][3])
-
-#my_list[1][2] = 10
-#my_list[1].pop()
-#del(my_list[1][2])
-print(my_list)
+# my_list = [[1, 2, 3], [4, 5, 6, ['a', 'b', 'c']], [7, 8, 9]]
+# for i in my_list:
+#     print(i)
 #
-print(my_list[1][3][:2])
+# print(my_list[1][3][2])
+# print('b' in my_list[1][3])
+#
+# #my_list[1][2] = 10
+# #my_list[1].pop()
+# #del(my_list[1][2])
+# print(my_list)
+# #
+# print(my_list[1][3][:2])
 
