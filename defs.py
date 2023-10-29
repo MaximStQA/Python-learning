@@ -28,3 +28,4 @@ def send_email(): # () -> сюда передаём какие-то параме
 
 send_email()
 send_email()
+send_email()
