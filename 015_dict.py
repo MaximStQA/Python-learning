@@ -11,8 +11,9 @@ my_dict = {'name': 'Sasha', 'car': 'Volkswagen', 'status': 'maried'}
 # ключи - уникальные для каждого значения
 my_dict['surname'] = 'Komarov' # добавление пар ключ значение
 
-my_dict['name'] = 'Maksim'
-my_dict['name_1'] = 'Maksim'
-print(dict(a = 1, b = 2))
-print(my_dict)
+# my_dict['name'] = 'Maksim'
+# my_dict['name_1'] = 'Maksim'
+# print(dict(a = 1, b = 2))
+# print(my_dict)
+
 

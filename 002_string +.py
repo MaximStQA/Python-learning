@@ -1,6 +1,6 @@
 string = "Hello World !"
 count = string.count("")
-#print(count)
+print(count)
 
 a = 379
 astring = str(a)
@@ -10,7 +10,7 @@ for i in astring:
     #print(i)
     sum = sum + int(i)
 
-#print("Сумма цифр", a, "равна:", sum)
+print("Сумма цифр", a, "равна:", sum)
 
 a = [True]
 b = False
@@ -47,7 +47,7 @@ print( (F -32) * 5/9)
 #print(C)
 
 # сокращённая запись
-"""a = 2
+a = 2
 a = a + 3
 print(a)
 a += 3
@@ -55,5 +55,5 @@ print(a)
 a -= 2
 print(a)
 a *= 2
-print(a)"""
+print(a)
 
