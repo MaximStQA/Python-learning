@@ -14,10 +14,10 @@ my_dict['surname'] = 'Komarov' # добавление пар ключ значе
 my_dict['name'] = 'Maksim'
 my_dict['name_1'] = 'Maksim'
 
-<<<<<<< HEAD
+# <<<<<<< HEAD
 
-print(dict(a = 1, b = 2))
-=======
-print(my_dict)
-
->>>>>>> refs/remotes/origin/main
+# print(dict(a = 1, b = 2))
+# =======
+# print(my_dict)
+#
+# >>>>>>> refs/remotes/origin/main
